@@ -1,5 +1,5 @@
-@import url(fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-@import url(fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body, .content, .content > p, #content, #content > p, .entry-title {
    font-family: 'Nanum Myeongjo', serif;
  }
