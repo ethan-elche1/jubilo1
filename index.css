@@ -1,7 +1,15 @@
+/*
 @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+*/
+
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo.ttf) format('truetype'); }
+@font-face { font-family: 'NotoSansKR'; src: url(../fonts/NotoSansKR.otf) format('opentype'); }
+
+
+
 body, .content, .content > p, #content, #content > p, .entry-title {
-   font-family: 'Nanum Myeongjo', serif;
+   font-family: 'NanumMyeongjo', serif;
  }
 
 body {
@@ -16,6 +24,7 @@ input, button, submit
 }
 
 h1 {
+  font-family: 'NanumMyeongjo', serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 1.6;
@@ -24,21 +33,21 @@ h1 {
 }
 
 h2 {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'NotoSansKR', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #8E8E8E;
 }
 
 h3 {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'NanumMyeongjo', serif;
   font-size: 16px;
   font-weight: 600;
   color: #867512;
 }
 
 h4{
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'NotoSansKR', sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
@@ -46,7 +55,7 @@ h4{
 }
 
 h5 {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'NotoSansKR', sans-serif;
   font-size: 12px;
   font-weight: 500;
   color: #8E8E8E;
@@ -54,7 +63,7 @@ h5 {
 }
 
 h6 {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'NanumMyeongjo', serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.8;
@@ -146,6 +155,7 @@ CONTENT_TOP
 
 .top_title h1 {
   position: relative;
+  font-family: 'NanumMyeongjo', serif;
   font-size: 34px;
   font-weight: 500;
   text-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
@@ -156,7 +166,7 @@ CONTENT_TOP
 .top_title h2 {
   position: relative;
   top: 4px;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'NanumMyeongjo', serif;
   font-size: 34px;
   font-weight: 600;
   text-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
@@ -167,7 +177,7 @@ CONTENT_TOP
   position: relative;
   top: 24px;
   left: 2px;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'NanumMyeongjo', serif;
   font-size: 12px;
   font-weight: 800;
   color: #ffffff;
