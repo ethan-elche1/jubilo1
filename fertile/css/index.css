@@ -29,7 +29,7 @@ input, button, submit
 h1 {
   font-family: 'NanumMyeongjo', serif;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: bolder;
   line-height: 1.6;
   color: #0D3A07;
   padding-top: 16px;
@@ -161,7 +161,7 @@ CONTENT_TOP
   position: relative;
   font-family: 'NanumMyeongjo', serif;
   font-size: 34px;
-  font-weight: bold;
+  font-weight: bolder;
   text-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   padding-top: 0;
@@ -225,7 +225,7 @@ CONTENT_2
 }
 
 .underline_border {
-  width: 116px;
+  width: 124px;
   height: 1px;
   margin-top: 8px;
   background-color: #C1A91F;
