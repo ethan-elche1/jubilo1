@@ -3,8 +3,11 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 */
 
-@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo.ttf) format('truetype'); }
-@font-face { font-family: 'NotoSansKR'; src: url(../fonts/NotoSansKR.otf) format('opentype'); }
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo-ExtraBold.ttf) format('truetype'); }
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo-Bold.ttf) format('truetype'); }
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo-Regular.ttf) format('truetype'); }
+@font-face { font-family: 'NotoSansKR'; src: url(../fonts/NotoSansKR-Bold.otf) format('opentype'); }
+@font-face { font-family: 'NotoSansKR'; src: url(../fonts/NotoSansKR-Regular.otf) format('opentype'); }
 
 
 
@@ -26,7 +29,7 @@ input, button, submit
 h1 {
   font-family: 'NanumMyeongjo', serif;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 1.6;
   color: #0D3A07;
   padding-top: 16px;
@@ -35,21 +38,21 @@ h1 {
 h2 {
   font-family: 'NotoSansKR', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: normal;
   color: #8E8E8E;
 }
 
 h3 {
   font-family: 'NanumMyeongjo', serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   color: #867512;
 }
 
 h4{
   font-family: 'NotoSansKR', sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 1.6;
   color: #6F6F6F;
 }
@@ -57,7 +60,7 @@ h4{
 h5 {
   font-family: 'NotoSansKR', sans-serif;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: normal;
   color: #8E8E8E;
   padding-top: 12px;
 }
@@ -65,10 +68,11 @@ h5 {
 h6 {
   font-family: 'NanumMyeongjo', serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 1.8;
   color: #6F6F6F;
   padding-top: 28px;
+  opacity: 0.8;
 }
 
 /*
@@ -157,7 +161,7 @@ CONTENT_TOP
   position: relative;
   font-family: 'NanumMyeongjo', serif;
   font-size: 34px;
-  font-weight: 500;
+  font-weight: bold;
   text-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   padding-top: 0;
@@ -168,7 +172,7 @@ CONTENT_TOP
   top: 4px;
   font-family: 'NanumMyeongjo', serif;
   font-size: 34px;
-  font-weight: 600;
+  font-weight: bold;
   text-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   color: #C0B056;
 }
@@ -179,7 +183,7 @@ CONTENT_TOP
   left: 2px;
   font-family: 'NanumMyeongjo', serif;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: bolder;
   color: #ffffff;
   opacity: 0.7;
   width: 284px;
