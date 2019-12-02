@@ -1,5 +1,13 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+*/
+
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo.ttf) format('truetype'); }
+@font-face { font-family: 'NotoSansKR'; src: url(../fonts/NotoSansKR.otf) format('opentype'); }
+
+
+
 body, .content, .content > p, #content, #content > p, .entry-title {
    font-family: 'Nanum Myeongjo', serif;
  }
