@@ -1,0 +1,727 @@
+@font-face { font-family: 'NotoSerifKR'; src: url(../fonts/NotoSerifKR-Black.otf) format('opentype'); }
+@font-face { font-family: 'NotoSerifKR'; src: url(../fonts/NotoSerifKR-SemiBold.otf) format('opentype'); }
+
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo-ExtraBold.ttf) format('truetype'); }
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo-Bold.ttf) format('truetype'); }
+@font-face { font-family: 'NanumMyeongjo'; src: url(../fonts/NanumMyeongjo-Regular.ttf) format('truetype'); }
+
+@font-face { font-family: 'NotoSansKR'; src: url(../fonts/NotoSansKR-Bold.otf) format('opentype'); }
+@font-face { font-family: 'NotoSansKR'; src: url(../fonts/NotoSansKR-Medium.otf) format('opentype'); }
+
+body, .content, .content > p, #content, #content > p, .entry-title {
+  font-family: 'NotoSerifKR', 'NanumMyeongjo', serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, submit
+{
+  border:none;
+}
+
+
+h1 {
+  font-family: 'NotoSerifKR', 'NanumMyeongjo', serif;
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: bolder;
+  color: #362921;
+}
+
+h2 {
+  font-family: 'NotoSansKR', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+p {
+  font-family: 'NotoSerifKR', 'NanumMyeongjo', serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #362921;
+  opacity: 0.85;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+}
+
+
+/*
+------------------------------------
+CONTENT_TOP
+------------------------------------
+*/
+
+.top{
+  box-sizing: border-box;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.top_bg {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  background: url("../img/main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.top_title {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top_title p {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.logo_w {
+  width: 220px;
+  height: 220px;
+  background: url("../img/bi_white.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+
+
+/*
+------------------------------------
+story1_southernVietnam
+------------------------------------
+*/
+
+.story1{
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+  background-color: #E7E7E1;
+}
+
+.story1_wrapper {
+  position: relative;
+  height: 671px;
+}
+
+.title{
+  position: absolute;
+  padding: 60px 20px 0 20px;
+  width: calc(100vw - 40px);
+  z-index: 1;
+}
+
+.story1 .title h1 {
+  padding-bottom: 70px;
+}
+
+.bg_illustration1{
+  position: absolute;
+  background: url("../img/story1_illustration.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: calc((100vw / 375) * 200);
+}
+
+.box{
+  position: relative;
+  box-sizing: border-box;
+  top: 368px;
+  margin-left: 36px;
+  width: calc(100vw - 72px);
+  height: calc(100vw - 72px);
+  background: url("../img/story1_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.bg_white{
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 50px;
+}
+
+
+
+/*
+------------------------------------
+story2_hutieu
+------------------------------------
+*/
+.story2{
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+  background-color: #fff;
+}
+
+.story2_wrapper {
+  position: relative;
+  height: 694px;
+}
+
+.story2_wrapper .title{
+  padding: 108px 20px 0 20px;
+}
+
+.story2 .title h1 {
+  padding-bottom: 84px;
+}
+
+.story2 .title p {
+  width: calc(100vw - 40px);
+}
+
+.bg_illustration2{
+  position: absolute;
+  background: url("../img/story2_illustration.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: calc((100vw / 375) * 390);
+}
+
+.story2 .box{
+  top: 390px;
+  background: url("../img/story2_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+/*
+------------------------------------
+story3_how to eat
+------------------------------------
+*/
+.story3{
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+  background-color: #402C20;
+  overflow-y: hidden;
+}
+
+.story3_wrapper {
+  position: relative;
+  height: 800px;
+}
+
+.story3_wrapper .title{
+  padding: 43px 20px 0 20px;
+}
+
+.story3 .title h1 {
+  color: #402C20;
+}
+
+.story3 .title p {
+  padding-bottom: 2px;
+  color: #402C20;
+}
+
+.bg_illustration3{
+  position: absolute;
+  background: url("../img/story3_illustration2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: calc((100vw / 375) * 282);
+}
+
+
+
+
+
+
+/*
+------------------------------------
+carousel
+------------------------------------
+*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.main-container {
+  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: auto;
+  top: 222px;
+  width: 100vw;
+  height: 840px;
+  background-color: transparent;
+}
+
+.main-carousel {
+  background-color: transparent;
+  width: calc(100vw - 40px);
+  outline: none !important;
+}
+
+.carousel-cell {
+  counter-increment: carousel-cell;
+  list-style-type: none;
+}
+
+.cell_bg {
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  width: 278px;
+  height: 353px;
+  margin-right: 20px;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
+}
+
+#cell_bg1 {
+  background: url("../img/how_to1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#cell_bg2 {
+  background: url("../img/how_to2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#cell_bg3 {
+  background: url("../img/how_to3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 0;
+}
+
+.cell_txt {
+  padding-top: 36px;
+}
+
+.cell_txt p {
+  padding-top: 20px;
+  padding-bottom: 12px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.recipe1 {
+  width: 156px;
+  height: 29px;
+  background: url("../img/recipe1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.recipe2 {
+  width: 227px;
+  height: 29px;
+  background: url("../img/recipe2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.recipe3 {
+  width: 143px;
+  height: 29px;
+  background: url("../img/recipe3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+/*
+------------------------------------
+story4 nem
+------------------------------------
+*/
+.story4{
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+  background-color: #fff;
+}
+
+.story4_wrapper {
+  position: relative;
+  height: 765px;
+}
+
+.story4_wrapper .title{
+  padding: 60px 20px 0 20px;
+}
+
+.story4 .title h1 {
+  padding-bottom: 84px;
+}
+
+.story4 .title p {
+  width: calc(100vw - 40px);
+}
+
+.bg_illustration4{
+  position: absolute;
+  background: url("../img/story4_illustration.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: calc((100vw / 375) * 342);
+}
+
+.story4 .box{
+  top: 342px;
+  background: url("../img/story4_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+
+/*
+------------------------------------
+branches
+------------------------------------
+*/
+.branch{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.branch_img1{
+  background: url("../img/branch_img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: calc((100vw / 375) * 250);
+}
+
+.branch_img2{
+  background: url("../img/branch_img2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: calc((100vw / 375) * 352);
+}
+
+.branches_info{
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
+
+.branch_title h1{
+  padding: 0 20px 32px 0;
+}
+
+.border {
+  width: calc(100vw - 40px);
+  height: 1px;
+  background-color: #362921;
+  opacity: 0.1;
+}
+
+.branches h2 {
+  color: #362921;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.branches p {
+  padding-bottom: 20px;
+}
+
+
+
+/*
+------------------------------------
+inquiry
+------------------------------------
+*/
+.inquiry{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background-color: #402C20;
+}
+
+.inquiry_title{
+  padding: 50px 20px 40px 20px;
+}
+
+.inquiry_title p{
+  color: #fff;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.inquiry_title h1{
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text],input[type=number], select, textarea{
+  width: 100%;
+  height: 56px;
+  padding: 12px;
+  border: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: 'NotoSansKR', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  /*resize: vertical;*/
+}
+
+.row {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 21px 12px 17px 0;
+  display: inline-block;
+  font-family: 'NotoSerifKR','NanumMyeongjo', serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.65;
+  height: 56px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  margin-top: 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: calc(100vw - 40px);
+  height: 60px;
+  font-family: 'NotoSansKR', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #402C20;
+  -webkit-appearance: none;
+}
+
+#submit_button{
+  border-bottom: none;
+}
+
+select {
+  color: #9e9e9e;
+}
+option:not(:first-of-type) {
+  color: black;
+}
+
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  padding: 0 20px 32px 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 56px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: calc(100vw - 96px)
+}
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+ */
+
+
+
+
+/*
+------------------------------------
+footer
+------------------------------------
+*/
+.footer{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 20px 28px 20px;
+  text-align: center;
+}
+
+.footer_btns {
+  display: inline-block;
+  height: 24px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.footer_btns h2{
+  color: #402C20;
+  float: left;
+  margin-right: 20px;
+}
+
+.footer p {
+  font-family: 'NotoSansKR', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #402C20;
+  opacity: 0.5;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+
+
+
+/*
+------------------------------------
+tab
+------------------------------------
+*/
+.navtab{
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  background-color: rgba(54,41,33,0.95);
+  text-align: center;
+  z-index: 999;
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.navtab .nav-menu li .tab .nav_item {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 25%;
+  opacity: 0.5;
+}
+
+.navtab .nav-menu li .tab .nav_item .text_wrap {
+  display: inline-block;
+  text-align: center;
+  padding: 18px 0 20px;
+  margin: auto;
+  position: relative;
+}
+
+.navtab .nav-menu li .tab .nav_item .text_wrap .nav_title {
+  box-sizing: border-box;
+  display: block;
+  color: #E7E7E1;
+  font-family: 'NotoSerifKR', 'NanumMyeongjo', serif;
+  font-weight: normal;
+  letter-spacing: -0.3px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.navtab .nav-menu li .tab .nav_item::before {
+  transition: all .3s ease;
+}
+
+.navtab .nav-menu li .tab.active .nav_item,
+.navtab .nav-menu li:hover .tab .nav_item {
+  opacity: 1;
+}
+
+
+.navtab .nav-menu li .tab.active .nav_item .text_wrap .nav_title .highlight {
+  width: 100%;
+  height: 2px;
+  background-color: #E7E7E1;
+  position: absolute;
+  bottom: 0;
+}

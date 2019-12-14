@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+      <script src="js/scrollMenu.js"></script>
+    <title>[오공떵번] 남부지방 쌀국수 후띠우 전문점</title>
+  </head>
+  <body>
+  <nav id="navtab" class="navtab">
+      <ul class="nav-menu">
+          <li>
+              <a data-scroll="top" href="#top" class="tab active">
+                  <div class="nav_item">
+                      <div class="text_wrap">
+                          <div class="nav_title">브랜드<div class="highlight"></div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a data-scroll="menu" href="#menu" class="tab">
+                  <div class="nav_item">
+                      <div class="text_wrap">
+                          <div class="nav_title">메뉴<div class="highlight"></div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a data-scroll="branch" href="#branch" class="tab">
+                  <div class="nav_item">
+                      <div class="text_wrap">
+                          <div class="nav_title">매장안내<div class="highlight"></div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a data-scroll="inquiry" href="#inquiry" class="tab">
+                  <div class="nav_item">
+                      <div class="text_wrap">
+                          <div class="nav_title">가맹문의<div class="highlight"></div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </li>
+      </ul>
+  </nav>
+    <div class="wrapper">
+      <section class="top"id="top">
+        <div class="top_bg">
+            <div class="top_title">
+                <p>남부지방 쌀국수 후띠우 전문점</p>
+                <div class = "logo_w"></div>
+            </div>
+        </div>
+      </section>
+      <div class="story1">
+          <div class="story1_wrapper">
+              <div class="title">
+                <h1>베트남 남부식 쌀국수<br>(Miền Nam)</h1>
+                <p>베트남 쌀국수는 크게 두 가지가 있습니다.<br>현재 우리나라에 보편화 되어있는 북부지방 하노이식<br>쌀국수인 ‘포(Pho)’ 외에도,<br><br>남부지방 사이공(호치민)에서 더 사랑받는 ‘후띠우<br>(Hủ tiếu)’가 있습니다.</p>
+              </div>
+              <div class ="bg_illustration1"></div>
+              <div class="box"></div>
+              <div class ="bg_white"></div>
+          </div>
+      </div>
+      <section class="story2" id="menu">
+            <div class="story2_wrapper">
+                <div class="title">
+                    <h1>후띠우(Hủ tiếu)</h1>
+                    <p>후띠우는 돼지사골과 안심, 각종 야채로 맛을 내어 포와<br>다른 색다른 맛으로 향신료나 그 외 소스로 맛을 내지 않고<br>후띠우 고유의 맛으로 즐기는 쌀국수입니다.<br><br>저희 오공떵번은 한국 최초 베트남 남부지방 쌀국수<br>후띠우 전문점입니다.</p>
+                </div>
+                <div class ="bg_illustration2"></div>
+                <div class="box"></div>
+            </div>
+      </section>
+      <div class="story3">
+            <div class="story3_wrapper">
+                <div class="title">
+                    <p>베트남 남부식 쌀국수</p>
+                    <h1>후띠우 먹는 법</h1>
+                </div>
+                <div class ="bg_illustration3"></div>
+                <div class="main-container">
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <div class = "cell_bg" id="cell_bg1"></div>
+                            <div class = "cell_txt">
+                                <h2>‘담백’ 후띠우</h2>
+                                <p>쌀국수 육수에 라임 한 조각을 짜고<br>베트남 절단고추 3~4개를 넣으면<br>담백한 쌀국수 완성!</p>
+                                <div class = "recipe1"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class = "cell_bg" id="cell_bg2"></div>
+                            <div class = "cell_txt">
+                                <h2>‘해장' 후띠우</h2>
+                                <p>쌀국수 육수에 라임 한 조각을 짜고<br>베트남 절단고추 2~3개를 넣고<br>고추기름 1/2스을 넣으면 해장 쌀국수 완성!</p>
+                                <div class = "recipe2"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class = "cell_bg" id="cell_bg3"></div>
+                            <div class = "cell_txt">
+                                <h2>‘얼큰’ 후띠우</h2>
+                                <p>쌀국수 육수에 라임 한 조각을 짜고<br>고추기름 1스푼을 넣으면<br>얼큰 쌀국수 완성!</p>
+                                <div class = "recipe3"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <script>
+                        // Carousel
+                        var $carousel = $('.main-carousel').flickity({
+                            contain: false,
+                            pageDots: false,
+                            cellSelector: '.carousel-cell',
+                            prevNextButtons: false,
+                            wrapAround: false,
+                            hash: true,
+                            autoPlay: true,
+                            autoPlay: 3000,
+                            pauseAutoPlayOnHover: false
+                        });
+                    </script>
+            </div>
+      </div>
+
+
+    </div>
+      <div class="story4">
+            <div class="story4_wrapper">
+                <div class="title">
+                    <h1>넴(Nem)</h1>
+                    <p>후띠우는 돼지사골과 안심, 각종 야채로 맛을 내어 포와<br>다른 색다른 맛으로 향신료나 그 외 소스로 맛을 내지 않고<br>후띠우 고유의 맛으로 즐기는 쌀국수입니다.<br><br>저희 오공떵번은 한국 최초 베트남 남부지방 쌀국수<br>후띠우 전문점입니다.</p>
+                </div>
+                <div class="bg_illustration4"></div>
+                <div class="box"></div>
+            </div>
+      </div>
+      <section class="branch" id="branch">
+          <div class="branch_img1"></div>
+          <div class="branch_img2"></div>
+          <div class="branches_info">
+              <div class="branch_title">
+                  <h1>매장안내</h1>
+              </div>
+              <div class="branches">
+                  <div class="border"></div>
+                  <h2>오공떵번 부산점</h2>
+                  <p>부산 사하구 승학로 50<br>당리동 313-3<br>051-292-4441<br>오픈 11:00 - 마감 21:00</p>
+              </div>
+              <div class="branches">
+                  <div class="border"></div>
+                  <h2>오공떵번 거창점</h2>
+                  <p>경남 거창군 거창읍 강변로8길 20<br>상림리 145-33 1층<br>055-943-9456<br>오픈 11:00 - 마감 21:00</p>
+              </div>
+              <div class="branches">
+                  <div class="border"></div>
+                  <h2>오공떵번 부산점</h2>
+                  <p>부산 사하구 승학로 50<br>당리동 313-3<br>051-292-4441<br>오픈 11:00 - 마감 21:00</p>
+              </div>
+              <div class="branches">
+                  <div class="border"></div>
+                  <h2>오공떵번 거창점</h2>
+                  <p>경남 거창군 거창읍 강변로8길 20<br>상림리 145-33 1층<br>055-943-9456<br>오픈 11:00 - 마감 21:00</p>
+              </div>
+              <div class="branches">
+                  <div class="border"></div>
+                  <h2>오공떵번 부산점</h2>
+                  <p>부산 사하구 승학로 50<br>당리동 313-3<br>051-292-4441<br>오픈 11:00 - 마감 21:00</p>
+              </div>
+          </div>
+      </section>
+      <section class="inquiry" id="inquiry">
+          <div class="inquiry_title">
+              <p>남부지방 쌀국수 후띠우 전문점, 오공떵번</p>
+              <h1>가맹문의</h1>
+          </div>
+          <div class="container">
+              <form class="gform" method="POST" data-email="elche1@naver.com" action="https://script.google.com/macros/s/AKfycbz4oqjeyK-Gm00UButbUlE9ZzuoFk-HGUo5_uLF/exec">
+                  <div class="row">
+                      <div class="col-25">
+                          <label for="in_type">유형</label>
+                      </div>
+                      <div class="col-75">
+                          <select id="in_type" name="type">
+                              <option value="join">가맹상담</option>
+                              <option value="store">점포상담</option>
+                              <option value="branch">지사개설</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-25">
+                          <label for="in_area">지역</label>
+                      </div>
+                      <div class="col-75">
+                          <select id="in_area" name="area">
+                              <option value="area_ph">지역을 선택해주세요</option>
+                              <option>서울</option>
+                              <option>경기</option>
+                              <option>인천</option>
+                              <option>강원</option>
+                              <option>대전</option>
+                              <option>충북</option>
+                              <option>충남</option>
+                              <option>대구</option>
+                              <option>경북</option>
+                              <option>경남</option>
+                              <option>울산</option>
+                              <option>부산</option>
+                              <option>광주</option>
+                              <option>전남</option>
+                              <option>전북</option>
+                              <option>제주</option>
+                              <option>세종</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-25">
+                          <label for="name">이름</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="name" name="name" placeholder="이름을 입력해주세요">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-25">
+                          <label for="number">연락처</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="number" id="number" name="number" placeholder="000-0000-0000">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-25">
+                          <label for="email">이메일</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="email" name="email" placeholder="000@0000.000">
+                      </div>
+                  </div>
+                  <div id="submit_button" class="row">
+                      <input type="submit" value="문의하기">
+                  </div>
+              </form>
+          </div>
+      </section>
+      <div class="footer">
+          <div class="footer_btns">
+              <h2>이용약관</h2>
+              <h2>개인정보취급방침</h2>
+              <h2>고객문의</h2>
+          </div>
+          <p>오공떵번 부산 사하구 승학로 50<br>대표전화 : 051-292-4441  |  대표자 : 대표자<br>고객정보책임 담당자 : 담당자  |  사업자등록번호 : 123-45-67890</p>
+          <p>Copyright (c) 오공떵번, Jubilo All Rights reserved.</p>
+      </div>
+  </body>
+</html>
