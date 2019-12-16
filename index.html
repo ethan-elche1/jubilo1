@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>
-      <script src="js/scrollMenu.js"></script>
+    <script src="js/scrollMenu.js"></script>
+    <script src="js/form_action.js"></script>
     <title>[오공떵번] 남부지방 쌀국수 후띠우 전문점</title>
   </head>
   <body>
@@ -57,7 +58,7 @@
       </ul>
   </nav>
     <div class="wrapper">
-      <section class="top"id="top">
+      <section class="top" id="top">
         <div class="top_bg">
             <div class="top_title">
                 <p>남부지방 쌀국수 후띠우 전문점</p>
@@ -130,7 +131,6 @@
                             prevNextButtons: false,
                             wrapAround: false,
                             hash: true,
-                            autoPlay: true,
                             autoPlay: 3000,
                             pauseAutoPlayOnHover: false
                         });
@@ -190,26 +190,27 @@
               <h1>가맹문의</h1>
           </div>
           <div class="container">
-              <form class="gform" method="POST" data-email="elche1@naver.com" action="https://script.google.com/macros/s/AKfycbz4oqjeyK-Gm00UButbUlE9ZzuoFk-HGUo5_uLF/exec">
-                  <div class="row">
+              <form name="frm1" id="gform" class="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbz4oqjeyK-Gm00UButbUlE9ZzuoFk-HGUo5_uLF/exec">
+                  <div class="row type">
                       <div class="col-25">
                           <label for="in_type">유형</label>
                       </div>
                       <div class="col-75">
-                          <select id="in_type" name="type">
-                              <option value="join">가맹상담</option>
-                              <option value="store">점포상담</option>
-                              <option value="branch">지사개설</option>
+                          <select class="in_type-validation" id="in_type" name="type" onblur="validate()" required>
+                              <option value="type_ph" disabled selected>문의유형을 선택해주세요</option>
+                              <option>가맹상담</option>
+                              <option>점포상담</option>
+                              <option>지사개설</option>
                           </select>
                       </div>
                   </div>
-                  <div class="row">
+                  <div class="row area">
                       <div class="col-25">
                           <label for="in_area">지역</label>
                       </div>
                       <div class="col-75">
-                          <select id="in_area" name="area">
-                              <option value="area_ph">지역을 선택해주세요</option>
+                          <select class="in_area-validation" id="in_area" name="location" onblur="validate()" required>
+                              <option value="area_ph" disabled selected>지역을 선택해주세요</option>
                               <option>서울</option>
                               <option>경기</option>
                               <option>인천</option>
@@ -230,32 +231,32 @@
                           </select>
                       </div>
                   </div>
-                  <div class="row">
+                  <div class="row name" id="input_name">
                       <div class="col-25">
                           <label for="name">이름</label>
                       </div>
                       <div class="col-75">
-                          <input type="text" id="name" name="name" placeholder="이름을 입력해주세요">
+                          <input type="text" class="name-validation validation-error" id="name" name="name" onblur="validate()" placeholder=" 이름을 입력해주세요" required>
                       </div>
                   </div>
-                  <div class="row">
+                  <div class="row number">
                       <div class="col-25">
                           <label for="number">연락처</label>
                       </div>
                       <div class="col-75">
-                          <input type="number" id="number" name="number" placeholder="000-0000-0000">
+                          <input type="number" class="number-validation validation-error" id="number" name="phone_number" onblur="validate()" placeholder=" 000-0000-0000" required>
                       </div>
                   </div>
-                  <div class="row">
+                  <div class="row email">
                       <div class="col-25">
                           <label for="email">이메일</label>
                       </div>
                       <div class="col-75">
-                          <input type="text" id="email" name="email" placeholder="000@0000.000">
+                          <input type="text" class="email-validation validation-error" id="email" name="email" onblur="validate()" placeholder=" 000@0000.000" required>
                       </div>
                   </div>
-                  <div id="submit_button" class="row">
-                      <input type="submit" value="문의하기">
+                  <div name="submit_button" class="row" >
+                      <button type="submit" id="submit_button" class="submit_button" disabled="disabled">문의하기</button>
                   </div>
               </form>
           </div>
@@ -269,5 +270,8 @@
           <p>오공떵번 부산 사하구 승학로 50<br>대표전화 : 051-292-4441  |  대표자 : 대표자<br>고객정보책임 담당자 : 담당자  |  사업자등록번호 : 123-45-67890</p>
           <p>Copyright (c) 오공떵번, Jubilo All Rights reserved.</p>
       </div>
+    </div>
+      <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
   </body>
 </html>
