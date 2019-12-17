@@ -25,6 +25,13 @@ $(document).ready(function() {
 
 
 
+function press(f){
+    if(f.keyCode == 13){
+        frm1.submit();
+    }
+}
+
+
 
 
 
@@ -99,11 +106,7 @@ function checkEmail(obj) {
     var result = true;
 
     var rowEmail = document.getElementsByClassName("row email");
-    /*
-    var name = $(obj).attr("name");
-    $("."+name+"-validation").html("");
-    $(obj).css("border","");
-     */
+
 
     result = checkEmpty(obj);
 
