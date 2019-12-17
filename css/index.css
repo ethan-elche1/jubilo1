@@ -18,6 +18,7 @@ body {
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased;
+  background-color: #FFF;
 }
 
 input, button, submit
@@ -65,6 +66,20 @@ CONTENT_TOP
   height: 100vh;
 }
 
+.background {
+  background-color: #402C20;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  animation-name: topSlideDown;
+  animation-delay: 1s;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  bottom: 0;
+}
+
 .top_bg {
   overflow: hidden;
   width: inherit;
@@ -75,6 +90,12 @@ CONTENT_TOP
   background-position: center center;
   position: relative;
   box-sizing: border-box;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
 .top_title {
@@ -84,6 +105,12 @@ CONTENT_TOP
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  animation-name: fadeIn;
+  animation-delay: 2.5s;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
 }
 
 .top_title p {
@@ -110,6 +137,26 @@ CONTENT_TOP
 }
 
 
+@keyframes topSlideDown {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 /*
 ------------------------------------
@@ -123,6 +170,7 @@ story1_southernVietnam
   overflow: auto;
   width: 100%;
   background-color: #E7E7E1;
+  opacity: 0;
 }
 
 .story1_wrapper {
@@ -186,6 +234,7 @@ story2_hutieu
   overflow: auto;
   width: 100%;
   background-color: #fff;
+  opacity: 0;
 }
 
 .story2_wrapper {
@@ -238,6 +287,7 @@ story3_how to eat
   width: 100%;
   background-color: #402C20;
   overflow-y: hidden;
+  opacity: 0;
 }
 
 .story3_wrapper {
@@ -388,6 +438,7 @@ story4 nem
   overflow: auto;
   width: 100%;
   background-color: #fff;
+  opacity: 0;
 }
 
 .story4_wrapper {
@@ -438,6 +489,7 @@ branches
   display: inline-block;
   width: 100%;
   background-color: #fff;
+  opacity: 0;
 }
 
 .branch_img1{
